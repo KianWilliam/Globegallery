@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade" >
+	<name>mod_globegallery</name>
+	<author>KWProductions121 Co.</author>
+	<creationDate>2024-July</creationDate>
+	<copyright>Copyright (C) 2016 - 2024</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>webarchitect@kwprodtuctions121.ir</authorEmail>
+	<authorUrl>http://www.extensions.kwproductions121.ir</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[A rotating globe with images of your choice!<br />
+	<a href="https://www.kwproductions121.ir"><img src="/modules/mod_globegallery/logokw-productions.gif" /></a>
+	]]>
+	</description>
+	<namespace path="src">Joomla\Module\Globegallery</namespace>
+	
+<languages folder="language">
+<language tag="en-GB">en-GB/en-GB.mod_globegallery.ini</language>
+<language tag="en-GB">en-GB/en-GB.mod_globegallery.sys.ini</language>
+</languages>
+
+	
+	<files>
+		<folder module="mod_globegallery">services</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+		<file>logokw-productions.gif</file>
+	</files>
+	
+	
+	<config>
+		<fields name="params">
+			<fieldset name="Globe">
+			     	<field
+					name="imagefolder"
+					type="text"
+					label="Image Folder Name"
+					required="true"
+				/>
+			   	<field
+					name="canvaswidth"
+					type="number"
+					label="Globe Width"
+					default="500"
+					filter="integer"
+					required="true"
+
+				/>
+					<field
+					name="canvasheight"
+					type="number"
+					label="Globe Height"
+					default="500"
+					filter="integer"
+					required="true"
+				/>
+					<field
+					name="points"
+					type="number"
+					label="Point Numbers"
+					default="500"
+					filter="integer"
+					required="true"
+
+				/>
+					<field
+					name="imagenums"
+					type="number"
+					label="Image Numbers"
+					default="5"
+					filter="integer"
+					required="true"
+
+				/>
+				
+					<field
+					name="imagewidth"
+					type="number"
+					label="Image Width"
+					default="22"
+					filter="integer"
+					required="true"
+
+				/>
+					<field
+					name="imageheight"
+					type="number"
+					label="Image Height"
+					default="22"
+					filter="integer"
+					required="true"
+
+				/>
+					<field
+					name="rotationspeed"
+					type="float"
+					label="Rotation Speed"
+					default="0.0004"
+					filter="float"
+					required="true"
+
+				/>
+					<field
+					name="resizetimeout"
+					type="number"
+					label="Resize Timeout"
+					default="500"
+					filter="integer"
+					required="true"
+
+				/>
+				
+				<field
+					name="cis"
+					type="text"
+					label="Speed of Image Change"
+					default="300000"
+					required="true"
+
+				/>
+					<field
+					name="textcolor"
+					type="color"
+					label="Text Color"
+					/>
+					
+						<field
+					name="bkcolor"
+					type="color"
+					label="ButtonBack Color"
+					/>
+			 
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
